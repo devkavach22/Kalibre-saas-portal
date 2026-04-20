@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../../components/ui/Card';
 import Button from '../../components/ui/Button';
-import { Mail, Phone, MapPin, Globe, Edit3, Plus, FileText, Award, BookOpen, Sparkles, CircleUser as UserIcon } from 'lucide-react';
+import { Mail, Phone, MapPin, Globe, Edit3, Plus, FileText, Award, BookOpen, Sparkles } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 

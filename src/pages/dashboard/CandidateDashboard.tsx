@@ -6,7 +6,7 @@ import Modal from '../../components/ui/Modal';
 import Input from '../../components/ui/Input';
 import Select from '../../components/ui/Select';
 import { motion } from 'framer-motion';
-import { ChevronRight, TrendingUp, Sparkles, MapPin, Target, Loader2, BrainCircuit, Zap, BarChart3, Clock, Rocket, Settings, FileText } from 'lucide-react';
+import { ChevronRight, TrendingUp, Sparkles, Loader2, BrainCircuit, Zap, BarChart3, Rocket, Settings, FileText } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { profileOptimizationSchema, type ProfileOptimizationValues } from '../../lib/validations';

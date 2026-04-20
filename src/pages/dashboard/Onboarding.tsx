@@ -8,7 +8,6 @@ import {
   ArrowRight,
   Plus,
   Trash2,
-  Sparkles,
   Presentation,
   Award,
   Globe,
@@ -16,7 +15,6 @@ import {
   BadgeCheck,
   Building2,
   Layers,
-  Search,
   ChevronRight,
   TrendingUp,
   Layout
@@ -730,7 +728,7 @@ const renderTabContent = (tabId: string, f: any, register: any, watch: any) => {
             <h4 className="text-sm font-black uppercase tracking-[4px] text-zinc-400">Void Detected</h4>
             <p className="text-[10px] font-bold text-zinc-300 uppercase tracking-widest mt-2">Initialize your {tabId} artifacts</p>
             <Button onClick={() => append({})} type="button" variant="secondary" className="mt-8 hover:bg-brand-red px-10 py-4 rounded-2xl shadow-xl transition-all duration-500">
-                Initialize Sequence
+              Initialize Sequence
             </Button>
           </div>
         )}
