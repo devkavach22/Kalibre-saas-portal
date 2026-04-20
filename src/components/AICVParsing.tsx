@@ -1,6 +1,6 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Upload, FileText, CheckCircle2, Sparkles, Loader2, X, BrainCircuit, Scan, Cpu } from 'lucide-react';
+import { Upload, CheckCircle2, Sparkles, Loader2, X, BrainCircuit, Scan, Cpu } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { cvParsingSchema, type CVParsingValues } from '../lib/validations';

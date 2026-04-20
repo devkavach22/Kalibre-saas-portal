@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useAuth, type Role } from "../context/AuthContext";
 import KalibreLogo from "../assets/logo.png";
-import { loginApi } from "../api/auth";
+
 import { useToast } from "../context/ToastContext";
 import { loginSchema, type LoginValues } from "../lib/validations";
 import Input from "../components/ui/Input";

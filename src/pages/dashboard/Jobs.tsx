@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Card from '../../components/ui/Card';
 import Button from '../../components/ui/Button';
-import Input from '../../components/ui/Input';
-import { Search, Filter, MapPin, Briefcase, DollarSign, Sparkles, ChevronRight, Bookmark, Star } from 'lucide-react';
+
+import { Search, Filter, Briefcase, DollarSign, Sparkles, ChevronRight, Bookmark, Star } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Jobs: React.FC = () => {
