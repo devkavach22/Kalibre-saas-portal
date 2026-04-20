@@ -118,7 +118,7 @@ const RegisterPage = () => {
     }
   };
 
-  const onRecruiterSubmit = async (values: RecruiterRegisterValues) => {
+  const onRecruiterSubmit = async (_values: RecruiterRegisterValues) => {
     showToast("Recruiter Registration not fully implemented in API yet.", "info");
   };
 

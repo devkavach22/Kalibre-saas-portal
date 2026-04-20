@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion, useScroll, AnimatePresence } from "framer-motion";
 import "../App.css"; // Keep original CSS import or adjust if it moved
 

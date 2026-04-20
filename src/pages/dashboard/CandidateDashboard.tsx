@@ -12,7 +12,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { profileOptimizationSchema, type ProfileOptimizationValues } from '../../lib/validations';
 import { useToast } from '../../context/ToastContext';
 import AICVParsing from '../../components/AICVParsing';
-import { useAuth } from '../../context/AuthContext';
+
 
 const CandidateDashboard: React.FC = () => {
   const [activeTab, setActiveTab] = useState("Overview");
@@ -20,7 +20,7 @@ const CandidateDashboard: React.FC = () => {
   const [isParsingOpen, setIsParsingOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const { showToast } = useToast();
-  const { user: authUser } = useAuth();
+
   
   const {
     register,
@@ -32,7 +32,7 @@ const CandidateDashboard: React.FC = () => {
     mode: "onChange",
   });
 
-  const onSubmit = async (values: ProfileOptimizationValues) => {
+  const onSubmit = async (_values: ProfileOptimizationValues) => {
     setIsLoading(true);
     // Simulate API call
     setTimeout(() => {

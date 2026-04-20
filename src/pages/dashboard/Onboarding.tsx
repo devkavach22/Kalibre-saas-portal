@@ -124,11 +124,11 @@ const Onboarding: React.FC = () => {
 
   const {
     register,
-    handleSubmit,
+
     control,
     watch,
     setValue,
-    formState: { errors }
+
   } = useForm<OnboardingFormData>({
     resolver: zodResolver(schema),
     defaultValues: {

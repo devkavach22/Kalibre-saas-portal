@@ -1,6 +1,6 @@
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Search,  Sparkles, MoveRight } from "lucide-react";
+import { Search, Sparkles, MoveRight } from "lucide-react";
 
 const Hero: React.FC = () => {
   const { scrollY } = useScroll();
@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col items-center">
-          
+
           {/* 2. THE STATUS CHIP */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
 
           {/* 3. HERO CONTENT: EDITORIAL STYLE */}
           <div className="text-center">
-            <motion.h1 
+            <motion.h1
               style={{ y: y2 }}
               className="text-[10vw] md:text-[8vw] font-black leading-[0.8] tracking-tighter text-brand-black uppercase"
             >
@@ -49,8 +49,8 @@ const Hero: React.FC = () => {
               <span className="relative">
                 In <span className="text-brand-red italic">Hiring</span>
                 {/* Decorative underline */}
-                <motion.svg 
-                  viewBox="0 0 300 20" 
+                <motion.svg
+                  viewBox="0 0 300 20"
                   className="absolute -bottom-2 left-0 w-full h-4 text-brand-red/30"
                   initial={{ pathLength: 0 }}
                   animate={{ pathLength: 1 }}
@@ -60,7 +60,7 @@ const Hero: React.FC = () => {
               </span>
             </motion.h1>
 
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
@@ -79,8 +79,8 @@ const Hero: React.FC = () => {
               <div className="flex items-center p-2">
                 <div className="flex-1 flex items-center gap-4 px-4 border-r border-black/[0.05]">
                   <Search className="text-brand-red" size={20} />
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     placeholder="Search roles like 'Lead Engineer'..."
                     className="bg-transparent w-full outline-none text-brand-black font-semibold placeholder:text-black/20"
                   />
@@ -90,7 +90,7 @@ const Hero: React.FC = () => {
                   <MoveRight size={18} />
                 </button>
               </div>
-              
+
               {/* Hot Tags Logic */}
               <div className="flex items-center gap-4 px-6 py-3 border-t border-black/[0.03] mt-1">
                 <span className="text-[9px] font-black uppercase text-black/30 tracking-widest">Trending:</span>
@@ -103,7 +103,7 @@ const Hero: React.FC = () => {
             </div>
           </motion.div>
 
-    
+
         </div>
       </div>
 
